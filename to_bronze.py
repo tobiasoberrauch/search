@@ -1,3 +1,4 @@
+import os
 import requests
 from pytube import YouTube
 
@@ -5,6 +6,8 @@ from pytube import YouTube
 channels =  [
     'UCqcbQf6yw5KzRoDDcZ_wBSw'
 ]
+
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 for channel_id in channels:
 
