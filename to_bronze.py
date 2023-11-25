@@ -4,7 +4,7 @@ from pytube import YouTube
 
 # Set the channel ID
 channels =  [
-    'UCqcbQf6yw5KzRoDDcZ_wBSw'
+    'UChpleBmo18P08aKCIgti38g'
 ]
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
