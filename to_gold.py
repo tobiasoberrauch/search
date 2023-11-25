@@ -30,5 +30,5 @@ def process_directory(source_dir, target_dir, model_path):
 
 source_dir = 'data/silver'
 target_dir = 'data/gold'
-model_path = 'models/vosk-model-en-us-0.22/vosk-model-en-us-0.22'
+model_path = 'models/vosk-model-en-us-0.22'
 process_directory(source_dir, target_dir, model_path)
