@@ -28,7 +28,7 @@ def process_directory(source_dir, target_dir, model_path):
             with open(target_file_path, 'w') as f:
                 f.write(result)
 
-source_dir = 'data/silver_mini'
+source_dir = 'data/silver'
 target_dir = 'data/gold'
 model_path = 'models/vosk-model-en-us-0.22/vosk-model-en-us-0.22'
 process_directory(source_dir, target_dir, model_path)
