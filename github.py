@@ -1,8 +1,9 @@
+import os
 import requests
 
 # Ersetzen Sie YOUR_ACCESS_TOKEN durch Ihren GitHub-Personal-Access-Token
 headers = {
-    "Authorization": "token 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",
+    "Authorization": f'token {os.environ.get("GOOGLE_API_KEY")}',
     "Accept": "application/vnd.github.v3+json"
 }
 

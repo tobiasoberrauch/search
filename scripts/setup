@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import requests
+import zipfile
+import os
+
+# URL of the Vosk model
+model_url = "https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip"
+
+# Path to save the downloaded file
+model_zip_path = "vosk-model-en-us-0.22.zip"
+
+# Download the file
+response = requests.get(model_url)
+with open(model_zip_path, "wb") as file:
+    file.write(response.content)
+
+# Create a models directory if it doesn't exist
+models_dir = "./models"
+os.makedirs(models_dir, exist_ok=True)
+
+# Extract the zip file
+with zipfile.ZipFile(model_zip_path, "r") as zip_ref:
+    zip_ref.extractall(models_dir)
+
+print("Model downloaded and extracted successfully.")
