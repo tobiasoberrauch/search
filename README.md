@@ -4,7 +4,7 @@
 
     git clone https://github.com/tobiasoberrauch/search
     cd privateGPT
-    poetry install
+    poetry install // or pip install pytube requests moviepy vosk pydub
     poetry run python scripts/setup
 
 ## Videos
